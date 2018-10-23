@@ -11,11 +11,10 @@ package figura;
  */
 interface Ifigura {
 
-    public static double PIGRECO = 3.1415;
+    public static double PIGRECO = 3.141592;
 
     public double cercaArea();
 
     public double cercaPerimetro();
 
 }
-

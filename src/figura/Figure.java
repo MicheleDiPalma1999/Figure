@@ -13,7 +13,7 @@ import static figura.Ifigura.PIGRECO;
  */
 abstract class Figure implements Ifigura {
 
-    protected int nLati = 1;
+    protected int nLati = 0;
     protected int lato1;
     protected double perimetro;
 
@@ -46,11 +46,7 @@ abstract class Figure implements Ifigura {
     }
 
     @Override
-    public double cercaPerimetro() {
-
-        perimetro = lato1;
-        return perimetro;
-    }
+    public abstract double cercaPerimetro(); 
 
     @Override
     public abstract double cercaArea();

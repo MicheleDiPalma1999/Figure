@@ -68,10 +68,15 @@ class Pentagono extends Figure {
     }
 
     public double cercaArea() {
-        area = ((double) ((long) getLato1() * getLato1())) * 1.72;
+        area = (cercaPerimetro()*trovaApotema())/2;
         return area;
     }
 
+    protected double trovaApotema(){
+        return lato1 * 0.866;
+    }
+
+    
     @Override
     public String toString() {
         return "Pentagono{" + "lato2=" + lato2 + ", lato3=" + lato3 + ", lato4=" + lato4 + ", lato5=" + lato5 + ", area=" + area + '}';
